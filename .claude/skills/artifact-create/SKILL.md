@@ -27,8 +27,9 @@ the workspace to this seat's private repo.
 2. Write a single polished HTML file to `artifacts/<kebab-name>.html`: inline styles, dark
    theme by default (the app is dark), readable typography, no lorem ipsum — use the user's
    real content from the conversation or workspace.
-3. Interactivity is welcome (checkboxes, progress bars, tabs) but state must live in the file
-   or `localStorage` — there is no server.
+3. Interactivity is welcome (checkboxes, progress bars, tabs) but there is no server, and the
+   preview sandbox runs on an opaque origin where `localStorage` THROWS — always wrap storage
+   access in try/catch with a graceful in-memory fallback.
 4. If it needs live data, the sandboxed frame can `fetch` HTTP APIs that allow cross-origin
    reads (e.g. the company backend's RLS-safe endpoints with the workspace's existing
    credentials, or a personal Supabase/Railway service the user sets up — tell them what to
