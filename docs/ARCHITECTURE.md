@@ -31,7 +31,7 @@ The tiers exist to manage one scarce resource: Claude's attention. Broad rules a
 **Engine vs seed files.** Every path in the box belongs to one of two classes, and the split is the contract any updater (including the desktop app) must honour:
 
 - **Engine** - the product. Replaced wholesale by updates, never personalized: `.claude/skills/`, `.claude/rules/`, `.claude/rules-import/`, `.claude/hooks/`, `.claude/reference/`, `scripts/`, `dashboard/`, `brain/`, `automations/`, and the system docs in `docs/`.
-- **Seed** - this install. Written by onboarding and daily use, never touched by updates: `.claude/CLAUDE.md`, `context/`, `memory/`, `Home.md`, `content-pipeline/`, `packs/installed.json` (and everything an update doesn't explicitly own, e.g. `clients/` and `.env`).
+- **Seed** - this install. Written by onboarding and daily use, never touched by updates: `.claude/CLAUDE.md`, `context/`, `memory/`, `Home.md`, `content-pipeline/`, `outputs/`, `data/`, `packs/installed.json` (and everything an update doesn't explicitly own, e.g. `clients/` and `.env`). One exception inside `context/`: `context/README.md` (the source-of-truth map) is engine-authored structure whose rulings are edited in place by the install - updaters merge, never clobber.
 
 The always-on instruction layer straddles the line by design: `.claude/CLAUDE.md` is the seed shell (identity and context imports, the memory-targets table, `<!-- ENGINE-BOUNDARY -->` markers documenting the split), while the stable half - hard rules, development rules, key paths - lives in the engine-class rule `.claude/rules/00-engine-core.md`. An update can ship better hard rules without ever touching who the system works for.
 

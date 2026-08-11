@@ -60,6 +60,12 @@ desktop.ini
 # Zip archives (deliverables, can be regenerated)
 *.zip
 
+# Source transcripts stay local (they carry client names and figures, and every
+# tracked file ships in the workspace template) - only the READMEs are tracked
+data/transcripts/**
+!data/transcripts/**/
+!data/transcripts/**/README.md
+
 # Raw bank statements (sensitive financial data; keep local, never commit)
 *-account-statement_*.csv
 *-statement_*.csv

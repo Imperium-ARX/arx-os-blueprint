@@ -1,5 +1,11 @@
 # The Cockpit Contract
 
+**Scope note:** this contract governs a cockpit built FOR this OS over the Brain (`brain/`).
+The company dashboards on the desktop app's Dashboard tab are a different thing - admin-managed
+web apps in their own repos, mapped per seat in `context/dashboards.md` and worked on via the
+`dashboard-query` skill. Personal artifacts (local HTML on the same tab) are the
+`artifact-create` skill.
+
 This folder is a CONTRACT, not an app. Any dashboard ("cockpit") built for this OS — by the build team at activation, or by anyone later — MUST satisfy the rules below. The cockpit is a read-only window over the operating layer; the Brain (`brain/`) and the repo's files stay the source of truth.
 
 Build it on demand, with the owner, once there is real data to show. An empty shell built early decays; a cockpit built against live pipes gets opened.

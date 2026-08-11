@@ -2,6 +2,18 @@
 
 All notable changes to Imperium OS. Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/); versioning follows [SemVer](https://semver.org/). Versions 0.1.0-0.2.1 are donor lineage (pre-repo, no dates recorded); everything under Unreleased landed in this repository on 2026-07-02.
 
+## [1.2.0] - 2026-08-11
+
+### Added
+
+- **Source-of-truth architecture layer** (patterns ported from a production install, content-free). `context/README.md` - the canonical source-of-truth map: directory table, "which near-duplicate wins" rulings, a query playbook (read-order + answer-shape per question archetype), freshness conventions (`(added YYYY-MM-DD)`, `[OWNER EXPLICITLY SAID]`), and the file-vs-database-row truth split. `context/index.md`'s "Where detail lives" now points at it.
+- **Deep business layer.** `context/business/{company-story,icp,pricing,competitive-landscape}.md` - empty templates filled during onboarding discovery. Deliberately NOT added: offers (canonical in `context/org/offers.md`) and voice (canonical in `content-pipeline/voice-profile/`) - the read-map rules on both.
+- **Relationship records (file CRM).** `context/clients/` + `context/prospects/` - one file per entity: bold key-value header (Status + Next step mandatory), reverse-chronological dated log with supersession in the headings, static profile sections below. One fully fictional example each. `clients/_prospects/` demoted to artifact storage; `memory/pipeline.md` (sales-crm pack) stays the board view with a new "never a row without a record file" rule.
+- **`outputs/` - committed work products.** Typed subfolders (briefs/, reports/, debriefs/); agent work lands in the repo, not chat; multi-file reports get a dated folder with a `pre-verification/` quarantine.
+- **`data/transcripts/` - source transcripts** (calls/, youtube/, competitor/), distinct from `memory/transcripts/` (daily voice capture). Content gitignored by design - tracked files ship in the desktop workspace template, transcripts carry names and figures.
+- **Hard rules 20 + 21** in engine core: archive-never-delete (demotion to `_archive/`, excluded from every index) and verified-data discipline (source-cited facts vs `[UNVERIFIED]` tags, one verified register per domain).
+- **`dashboard-query` extended** with the company Supabase `cockpit_data` contract (one row per page, department-gated edits, whole-payload writes); `dashboard/README.md` gains a scope note separating the self-built cockpit contract from admin-managed Dashboard-tab dashboards. Routing rows added for `dashboard-query` and `artifact-create` (fixes registry drift).
+
 ## [1.1.0] - 2026-07-04
 
 ### Removed

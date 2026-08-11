@@ -2,20 +2,22 @@
 title: Registry (generated)
 type: index
 status: generated
-updated: 2026-07-04
+updated: 2026-08-11
 ---
 
 # Registry - generated from disk, do not hand-edit
 
-Regenerate: `node scripts/generate-registry.js` · Generated: 2026-07-04
+Regenerate: `node scripts/generate-registry.js` · Generated: 2026-08-11
 
-## Skills (21 in .claude/skills/)
+## Skills (23 in .claude/skills/)
 
+- **artifact-create** - Use ONLY when the user explicitly asks to create a personal artifact, dashboard, goal board, vision board, tracker, or similar personal visualization for their …
 - **belief-interview** - Socratic interview system that extracts the owner's authentic opinions on topics they've verbally opined on but never written about. The anti-AI-slop layer. Del…
 - **blueprint-archive** - Process new files dropped into memory/blueprints-archive/ folder. Reads every file thoroughly, evaluates against existing codebase knowledge, identifies new/ove…
 - **braindump-router** - MANDATORY for ANY conversational input >50 words OR showing brain-dump signals. Parses the owner's voice-dictation transcripts (Wispr Flow or similar) into stru…
 - **client-delivery** - Use when planning client delivery, onboarding engagements, building SOPs, training operators, scoping AI implementation, deploying voice/LLM/email systems, or d…
 - **company-strategy** - Use when designing the company's offers, pricing deals, preparing for sales calls, handling objections, qualifying prospects, structuring revenue share, or maki…
+- **dashboard-query** - Use when the user asks about a dashboard on their Dashboard tab — a data point, a metric, "why does the dashboard show X", or a request to change/add/fix someth…
 - **deep-research** - Deep multi-source research engine: parallel web research + YouTube transcript analysis, synthesized into a cited report. Trigger when the owner says 'deep resea…
 - **founders-oracle** - Consult history's greatest founders on any business decision. Queries extracted frameworks from Elon Musk, Steve Jobs, Jeff Bezos, Sam Walton, John D. Rockefell…
 - **mastermind-oracle** - Multi-voice debate engine - debate-ready voices spanning public business creators, billion-dollar founders, and historical empire builders. Ask any business que…
@@ -33,11 +35,11 @@ Regenerate: `node scripts/generate-registry.js` · Generated: 2026-07-04
 - **wispr-corrections** - Transcription error correction dictionary for voice-to-text input (Wispr Flow or similar). Used by braindump-router skill during Step 1 (Clean). Contains proper…
 - **youtube-research** - Full YouTube video research workflow - transcribe via Apify, extract key insights, save findings to memory, and optionally create content briefs. Use when the o…
 
-## Rules (14 always-on · 18 import · 7 user-global)
+## Rules (14 always-on · 18 import · 8 user-global)
 
 - Always-on (.claude/rules/): 00-engine-core · 02-subagent-context · 03-memory-persistence · 04-skill-routing · 10-quality-gate · 11-anti-ai-slop · 13-owner-privacy · 17-concise-chat · 18-braindump-first · 19-research-empirical-claims · 20-contrarian-default · 27-tool-recommendation-discipline · 28-what-would-change-my-mind · 31-financial-accuracy
 - Import (.claude/rules-import/): 01-youtube-apify · 05-content-voice · 06-always-push-deploy · 07-media-hub-auto-save · 08-google-workspace-gws-cli · 09-google-docs-formatting · 12-notify-owner · 14-whatsapp-query · 15-conversational-copy-mode · 16-kanban-calendar-sync · 21-no-large-local-downloads · 22-media-storage · 23-telegram-on-demand-sync · 24-pdf-and-markdown-links · 25-voice-calibration · 26-owner-likeness-generation · 30-excalidraw-and-artifact-links · 32-org-context
-- User-global (~/.claude/rules/): 11-anti-ai-slop · 17-concise-chat · 19-research-empirical-claims · 20-contrarian-default · 27-tool-recommendation-discipline · 28-what-would-change-my-mind · 29-image-output-links
+- User-global (~/.claude/rules/): 11-anti-ai-slop · 17-concise-chat · 19-research-empirical-claims · 20-contrarian-default · 27-tool-recommendation-discipline · 28-what-would-change-my-mind · 29-image-output-links · 34-auto-open-delivered-files
 - Tiers + triggers: `.claude/reference/rules-index.md`
 
 ## Clients (0 active dirs in clients/)

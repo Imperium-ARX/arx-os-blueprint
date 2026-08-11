@@ -35,8 +35,9 @@ const alwaysOnFiles = [
   path.join(ROOT, '.claude', 'reference', 'rules-index.md'), // not always-on (it lives in reference/ so it does NOT auto-load), but its pointers must stay alive
   ...mdFiles(path.join(ROOT, '.claude', 'rules')).filter(f => f !== 'INDEX.md').map(f => path.join(ROOT, '.claude', 'rules', f)),
   path.join(ROOT, 'context', 'index.md'),
+  path.join(ROOT, 'context', 'README.md'), // the source-of-truth map: not always-on, but its pointers must stay alive
 ];
-const pathRe = /`((?:\.claude|memory|context|clients|automations|scripts|content-pipeline|docs|dashboard|packs)\/[^`\s*]+?)`/g;
+const pathRe = /`((?:\.claude|memory|context|clients|automations|scripts|content-pipeline|docs|dashboard|packs|outputs|data)\/[^`\s*]+?)`/g;
 for (const file of alwaysOnFiles) {
   const text = read(file);
   let m;

@@ -22,7 +22,9 @@ Domain map of the whole system. An org-chart view over the folders: nothing here
 |---|---|---|
 | **Memory / knowledge** | `memory/` (see `memory/CONVENTIONS.md`), `context/` (org truth: `context/org/` · seat truth: `context/seat.md`) | memory-sync, memory-dream |
 | **Tasks + dates** | `memory/kanban.md`, `memory/calendar.md` | (updated automatically after any task) |
-| **Clients** | `clients/<name>/` (STATUS + context/legal/research/deliverables) | client-delivery, blueprint-archive |
+| **Clients** | `clients/<name>/` (delivery workspace) + `context/clients/` (relationship records) | client-delivery, blueprint-archive |
+| **Prospects / CRM records** | `context/prospects/` (deep records; board: `memory/pipeline.md`) | prospect-intel (sales-crm pack) |
+| **Work products** | `outputs/` (briefs, reports, debriefs - committed, not chat-only) | (any skill that produces a document) |
 | **Sales / strategy** | `memory/business/`, `context/org/offers.md` | company-strategy, mastermind-oracle |
 | **Content** | `content-pipeline/` (drafts, published, templates, voice-profile) | voice-check (base) · content-pipeline, content-cascade, video-score (content-marketing pack) |
 | **Research / intel** | `content-pipeline/research/`, `memory/content/creator-blueprints/` | deep-research, youtube-research (base) · trend-intelligence, creator-oracle (content-marketing pack) |
@@ -44,7 +46,8 @@ The base carries the ~21 engine skills every seat needs (memory, routing, qualit
 - Folders are by **asset type**; this map is the **domain overlay**. Don't rename top-level folders once skills and rules reference them.
 - Org truth (`context/org/`, company-wide) vs seat truth (`context/seat.md`, this install only). Multi-seat companies sync the org folder read-only from a shared repo: `context/org/README.md`.
 - Naming: kebab-case, date-first ISO (`YYYY-MM-DD-topic`). Full standard: `memory/CONVENTIONS.md`.
-- Memory flow: raw capture (`memory/transcripts/`) → structured memory (`memory/*.md`) → outputs (`content-pipeline/`, `clients/*/deliverables/`).
+- Memory flow: raw capture (`memory/transcripts/`, source material in `data/transcripts/`) → structured memory (`memory/*.md`, `context/`) → outputs (`content-pipeline/`, `clients/*/deliverables/`, `outputs/`).
+- Which file is truth for which question: `context/README.md` (the source-of-truth map).
 - New information from {{OWNER_SHORT}} gets persisted to the right memory file in the same session it appears.
 
 ## Runtime

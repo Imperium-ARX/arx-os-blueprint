@@ -14,6 +14,7 @@ One standard, everywhere, enforced forward-only. New files follow it; nothing ge
 2. **Dated artifacts are date-FIRST ISO:** `YYYY-MM-DD-topic-slug` (files or folders). Sortable, globbable. Never date-last, never underscores in the date.
 3. **Folders that hold one concept get the concept's name,** singular where natural.
 4. **Underscore prefix = system/meta:** `_archive/`, `_TEMPLATE/`, `_prospects/`, `_build/`. Underscore-prefixed dirs are excluded from registries and lint counts.
+   **Archive, never delete:** superseding a doc means moving it to the sibling `_archive/` folder - it stays readable, loses canonical status, and drops out of every index (engine-core hard rule 20).
 5. **Legacy exceptions:** the core memory stubs shipped with this template (`system_changelog.md`) keep their names because rules and skills reference them. Everything you create new is kebab-case.
 
 ## Where things live
@@ -24,6 +25,9 @@ One standard, everywhere, enforced forward-only. New files follow it; nothing ge
 - **People depth:** `memory/people/dossiers/<name>.md`, frameworks in `memory/people/frameworks/`
 - **Content knowledge:** `memory/content/`, creator studies in `memory/content/creator-blueprints/<creator>/`
 - **Voice transcripts:** `memory/transcripts/YYYY-MM-DD.md`, one file per day
+- **Source transcripts (calls, own videos, competitor content):** `data/transcripts/{calls,youtube,competitor}/` (content gitignored; see its README)
+- **Committed work products (non-client, non-content):** `outputs/{briefs,reports,debriefs}/`
+- **Client + prospect relationship records:** `context/clients/`, `context/prospects/` (one file per entity; map: `context/README.md`)
 - **Research outputs:** `content-pipeline/research/YYYY-MM-DD-topic/` (folder per mission, `00-`-prefixed master doc first)
 - **Client work:** `clients/<name>/` (see `clients/README.md`), never inside memory/
 

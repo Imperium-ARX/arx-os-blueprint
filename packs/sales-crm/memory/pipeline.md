@@ -19,7 +19,7 @@ One row per deal. Stages are fixed vocabulary - don't invent new ones, rename th
 
 Column rules:
 
-- **Prospect / Company** - names as in `memory/people/<kebab-name>.md`; the Dossier column links there
+- **Prospect / Company** - names as in `memory/people/<kebab-name>.md`; the Dossier column links there. The deep record lives in `context/prospects/<slug>.md` - never let a deal exist only as a row with no record file
 - **Stage** - from the fixed vocabulary only
 - **Value** - expected deal value with currency; `?` until quoted, `[UNVERIFIED]` if estimated (rule 31 applies the moment a figure might be repeated as fact)
 - **Next step** - a verb with a date ("send proposal by Fri"), never "waiting". If the next step is theirs, write "their move since <date>" so staleness is visible

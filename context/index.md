@@ -29,12 +29,16 @@ This file is a **top sheet of pointers**, not a copy. Detail lives in `memory/bu
 
 ## Where detail lives (single source of truth)
 
+**The full source-of-truth map is `context/README.md`** - which file wins for which question, the query playbook, and the archive rule. The short version:
+
+- Deep business layer (story, ICP depth, pricing, competitors) → `context/business/`
+- Client + prospect relationship records → `context/clients/`, `context/prospects/` (delivery workspaces stay in `clients/<name>/`)
 - Business strategy + products → `memory/business/`
-- Live client engagements → `clients/<name>/STATUS.md`
 - People + relationships → `memory/people/` (the roster is names only; dossiers live here)
 - Brand voice → `content-pipeline/voice-profile/`
 - Finances → `memory/finances.md` (sensitive, never summarised here)
 - Active tasks + dates → `memory/kanban.md`, `memory/calendar.md`
+- Committed work products → `outputs/` · source transcripts → `data/transcripts/`
 
 ## Maintenance
 

@@ -39,6 +39,23 @@ Check the `access` column first:
 - GitHub is the hard enforcement: if a push is rejected, your access changed — report it, do
   not work around it.
 
+## The `cockpit_data` table (company dashboards on the company Supabase)
+
+Company-built dashboards usually render from the company workspace's `cockpit_data` table -
+one row per dashboard page:
+
+- `page` (text, primary key) - e.g. `overview`, `finance`, `sales`, `marketing`, `ops`
+- `department` (text) - which department's seats may edit that page; `null` = admin backend only
+- `payload` (jsonb) - the full page content the dashboard renders
+- `updated_at`, `updated_by` - `updated_by` is the employee_id of the last seat edit; `null` = server job
+
+Reading a page's data = one row by `page`. Editing is **department-gated**: only write a row
+whose `department` matches this seat's department (from `imperium-user.json`); RLS enforces it
+server-side, so a rejected write means the gate is real - report it, don't work around it.
+Edits replace the `payload` - read it first, change only the fields asked for, write it back
+whole. A dashboard whose numbers come from `cockpit_data` changes WITHOUT a repo push; the repo
+route above is for changing the dashboard's code, not its data.
+
 ## Rules
 
 - Never edit `context/dashboards.md` or claim access it doesn't grant.

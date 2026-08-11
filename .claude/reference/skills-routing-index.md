@@ -4,11 +4,13 @@ Seeded from skill frontmatter on 2026-06-11 (regenerate after adding skills: reg
 
 | Skill | Triggers / what it does |
 |---|---|
+| `artifact-create` | Create a personal local artifact for the Dashboard tab (vision board, tracker, goal board) - explicit ask only, self-contained HTML in `artifacts/`, soft cap 2. Not for company dashboards |
 | `belief-interview` | Socratic interview system that extracts the owner's authentic opinions on topics they've verbally opined on but never written about. The anti-AI-slop layer. Delivers 8-10 questions via chat or the notify channel, capture |
 | `blueprint-archive` | Process new files dropped into memory/blueprints-archive/ folder. Reads every file thoroughly, evaluates against existing codebase knowledge, identifies new/overlapping/contradictory intel, distributes content to correct |
 | `braindump-router` | MANDATORY for ANY conversational input >50 words OR showing brain-dump signals. Parses the owner's voice-dictation transcripts (Wispr Flow or similar) into structured intents, routes each to the correct skill/tool, score |
 | `client-delivery` | Use when planning client delivery, onboarding engagements, building SOPs, training operators, scoping AI implementation, deploying voice/LLM/email systems, or differentiating from commodity automation shops. Trigger on c |
 | `company-strategy` | Use when designing the company's offers, pricing deals, preparing for sales calls, handling objections, qualifying prospects, structuring revenue share, or making strategic decisions for {{COMPANY_NAME}}. Trigger on offe |
+| `dashboard-query` | Questions about a Dashboard-tab dashboard ("what's X", "why does it show Y") or change requests to one. Resolves the backing repo + access from `context/dashboards.md`; company data via the `cockpit_data` table |
 | `deep-research` | Deep multi-source research engine: parallel web research + YouTube transcript analysis, synthesized into a cited report. Trigger when the owner says 'deep research', 'research [topic] properly', 'find the best content ab |
 | `founders-oracle` | Consult history's greatest founders on any business decision. Queries extracted frameworks from Elon Musk, Steve Jobs, Jeff Bezos, Sam Walton, John D. Rockefeller, and Henry Ford (built from biography podcast transcripts |
 | `mastermind-oracle` | Multi-voice debate engine - debate-ready voices spanning public business creators, billion-dollar founders, and historical empire builders. Ask any business question, get a multi-voice debate with genuine disagreements f |

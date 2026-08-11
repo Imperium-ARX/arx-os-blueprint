@@ -37,6 +37,8 @@ The stable operating instructions every seat runs on, whoever sits in it. Rules 
 17. **AI image/video of the owner** → the Soul ID configured in the owner-likeness rule, optional Higgsfield module (read `rules-import/26`).
 18. **Optional comms modules:** WhatsApp → MCP tools only, never SQL (read `rules-import/14`); Telegram queries → run on-demand sync first (read `rules-import/23`).
 19. **Org mode: `context/org/` is read-only** - propose changes via `memory/org-proposals/`, never edit the mirror (read `rules-import/32`).
+20. **Archive, never delete.** Superseded docs move to a sibling `_archive/` folder (demotion, not deletion): kept readable, no longer canonical, excluded from every index and generator. Applies everywhere (`context/`, `memory/`, `outputs/`, `clients/`).
+21. **Verified-data discipline.** Facts extracted from real sources (transcripts, signed docs, live queries) are verified and cite their source; everything else is tagged `[UNVERIFIED]` and never quoted as fact. One verified register per domain; superseded unverified material is quarantined in a `pre-verification/` subfolder. Routing map: `context/README.md`.
 
 ## Development rules
 
@@ -51,7 +53,9 @@ The stable operating instructions every seat runs on, whoever sits in it. Rules 
 - **Authoritative catalogs (generated from disk, never trust inlined counts):** `.claude/reference/registry.md` - refresh with `node scripts/generate-registry.js`. Rules catalog + tiers: `.claude/reference/rules-index.md`.
 - YouTube transcripts: `automations/youtube/` · Notifications: `automations/notify/` + `scripts/notify.js`
 - Content templates: `content-pipeline/templates/` · Voice: `content-pipeline/voice-profile/`
-- Clients: `clients/` (new client → copy `clients/_TEMPLATE/`)
+- Clients: `clients/` (new client → copy `clients/_TEMPLATE/`) · Relationship records: `context/clients/` + `context/prospects/` (one file per entity)
+- Source-of-truth map + query playbook: `context/README.md` · Deep business layer: `context/business/`
+- Committed work products: `outputs/` (briefs/reports/debriefs) · Source transcripts: `data/transcripts/` (content gitignored)
 - Department packs: `packs/` (optional capability bundles; state in `packs/installed.json`, spec in `packs/README.md`, installer `scripts/install-pack.js`)
 - Connector setup guides: `docs/connectors/` (menu: `docs/connectors/INDEX.md`)
 - Env vars: ONE master root `.env` (edit there, run `node scripts/sync-env.js` to propagate; never hand-edit per-module .env files)

@@ -22,7 +22,7 @@ Rules of the pattern:
 
 ## Prospects
 
-Not-yet-clients live in `clients/_prospects/<name>/` with just a STATUS.md (stage: lead / qualified / proposal sent / negotiating). When they sign, move the folder up to `clients/<name>/` and expand it from `_TEMPLATE/`. When they go cold, note why in STATUS.md and leave the folder in `_prospects/` as institutional memory.
+The prospect RECORD lives in `context/prospects/<slug>.md` (one file per prospect - see its README; board view: `memory/pipeline.md` from the sales-crm pack). A folder in `clients/_prospects/<name>/` is created only once a prospect accumulates artifacts (draft proposals, research). When they sign, create `clients/<name>/` from `_TEMPLATE/` and the client record in `context/clients/<slug>.md`; the prospect record stays as the deep history. When they go cold, set the record's status to COLD with the reason.
 
 ## Archiving
 

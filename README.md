@@ -69,7 +69,9 @@ A live progress page ([docs/setup-status.html](docs/setup-status.html) - open it
 |---|---|
 | `context/` | The one-page truth about your company. Read first, every session. |
 | `memory/` | Everything the system learns: people, decisions, tasks, dates. |
-| `clients/` | One folder per client engagement. |
+| `clients/` | One folder per client engagement (relationship records live in `context/clients/` + `context/prospects/`). |
+| `outputs/` | Work the system produces for you - briefs, reports, debriefs - saved and versioned, never chat-only. |
+| `data/` | Source material like call and video transcripts (kept on your machine, never shipped). |
 | `content-pipeline/` | Drafts, published work, research, and your voice profile. |
 | `automations/` | The runtime tools, like YouTube research and notifications. |
 | `packs/` | Optional department packs: extra skills installed only where a seat needs them. |
