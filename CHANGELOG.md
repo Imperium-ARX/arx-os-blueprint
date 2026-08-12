@@ -2,6 +2,12 @@
 
 All notable changes to Imperium OS. Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/); versioning follows [SemVer](https://semver.org/). Versions 0.1.0-0.2.1 are donor lineage (pre-repo, no dates recorded); everything under Unreleased landed in this repository on 2026-07-02.
 
+## [1.2.1] - 2026-08-12
+
+### Added
+
+- **Onboarding fills the deep business layer.** Phase 2 Branch A now seeds `context/business/` from answers the company interview already collects (story fragments → company-story, ICP → icp Layer 1, named prices → pricing tagged `[UNVERIFIED]` unless documented, competitor mentions → competitive-landscape) - zero extra mandatory questions - then offers one optional ten-minute deep dive (declined = pending item, never a blocker). Branch B recognises admin-seeded `context/business/*.md` (the desktop provisioning channel now allows it alongside `context/org/`): seeded files are treated like org truth, untouched templates are left for the owner's seat. `docs/ONBOARDING-FLOW.md` updated to match.
+
 ## [1.2.0] - 2026-08-11
 
 ### Added
