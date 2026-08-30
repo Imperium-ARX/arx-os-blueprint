@@ -8,6 +8,12 @@ created: 2026-07-02
 
 # Connector index
 
+> **Scope (connections-v1):** the seat's WORK APPS (mail, calendar, accounting, CRM, ads, calls and the rest)
+> connect from the **Connections tab** inside the app — each person signs in with their own account in their own
+> browser, and `context/connections.md` carries the live state. Nothing in this document applies to those.
+> This index covers only worker/install-team connectors and legacy key-based guides that predate the tab;
+> none of them may be set up by collecting keys in chat.
+
 Every connector in the box, on one screen. Onboarding Phase 4 builds its plan from this table: the universal spine first (Google Workspace - workspace backup and team sharing are built into Imperium OS, so there is nothing to connect for those), then the picks your role card recommends, filtered by where your work actually lives.
 
 **Reading the table.** *Key needed*: whether you'll copy a key or approve a sign-in. *Effort*: `5 min` and `15 min` are guided in the chat; `build team` means it's set up with your install team, not solo mid-onboarding. Role columns: **●** start here for this seat, **○** when the work calls for it, **—** usually skip.

@@ -23,7 +23,6 @@
     #org-mode                            text: "Solo install" | "First seat of your company" | "Org seat - shared company truth"
     li.phase[data-phase] data-status     pending | current | done
     li.phase .fill style width           0% | 50% | 100%
-    .connector[data-name] data-status    pending | connected | skipped | deferred | optional
     .pack[data-name] data-status         available | recommended | installed | declined
 -->
 <style>
@@ -346,64 +345,9 @@
 
     <section class="card">
       <h2>Connections</h2>
-      <div class="connectors">
-        <div class="connector" data-name="google-workspace" data-status="pending">
-          <div class="dot"></div>
-          <div class="cinfo">
-            <div class="cname">Google Workspace</div>
-            <div class="cdesc">Docs, Drive, Calendar, and Gmail.</div>
-          </div>
-          <div class="cchip"></div>
-        </div>
-        <div class="connector" data-name="apify-youtube" data-status="pending">
-          <div class="dot"></div>
-          <div class="cinfo">
-            <div class="cname">YouTube research</div>
-            <div class="cdesc">Full transcripts from any video.</div>
-          </div>
-          <div class="cchip"></div>
-        </div>
-        <div class="connector" data-name="telegram-notify" data-status="pending">
-          <div class="dot"></div>
-          <div class="cinfo">
-            <div class="cname">Telegram notifications</div>
-            <div class="cdesc">Finished work finds your phone.</div>
-          </div>
-          <div class="cchip"></div>
-        </div>
-        <div class="connector" data-name="dropbox-rclone" data-status="optional">
-          <div class="dot"></div>
-          <div class="cinfo">
-            <div class="cname">Dropbox media</div>
-            <div class="cdesc">Big files, streamed instead of downloaded.</div>
-          </div>
-          <div class="cchip"></div>
-        </div>
-        <div class="connector" data-name="mcp-servers" data-status="optional">
-          <div class="dot"></div>
-          <div class="cinfo">
-            <div class="cname">MCP servers</div>
-            <div class="cdesc">Extra abilities: browser, scraping, docs.</div>
-          </div>
-          <div class="cchip"></div>
-        </div>
-        <div class="connector" data-name="whatsapp-mcp" data-status="optional">
-          <div class="dot"></div>
-          <div class="cinfo">
-            <div class="cname">WhatsApp</div>
-            <div class="cdesc">Search your chats and contacts.</div>
-          </div>
-          <div class="cchip"></div>
-        </div>
-        <div class="connector" data-name="higgsfield" data-status="optional">
-          <div class="dot"></div>
-          <div class="cinfo">
-            <div class="cname">Image studio</div>
-            <div class="cdesc">AI images of you, for content.</div>
-          </div>
-          <div class="cchip"></div>
-        </div>
-      </div>
+      <p class="muted" style="margin:0">Your work apps connect from the <strong>Connections tab</strong> inside the
+      app (the plug icon in the sidebar) — each one with your own sign-in, in your own browser, and the live state
+      shows there. Nothing to track on this page.</p>
     </section>
 
   </div>
