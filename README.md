@@ -1,5 +1,8 @@
 <p align="center">
-  <img src="docs/assets/hero.svg" alt="Imperium OS — an AI operating system for your company" width="100%"/>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="docs/assets/banner-dark.png">
+    <img src="docs/assets/banner.png" alt="Imperium OS: an AI operating system for your company. You, the brain, and its five organs: context, memory, skills, connectors, self-maintenance." width="100%">
+  </picture>
 </p>
 
 <p align="center">
@@ -15,7 +18,7 @@ An AI operating system for your company, installed in about an hour.
 
 Imperium OS turns Claude Code into a system that knows your business, remembers everything you tell it, runs your repeat work through pre-built skills, and gets sharper every week you use it. You talk to it in plain English. It does the technical work.
 
-It's the same system [Imperium Growth](https://imperium-growth.com) runs its own company on - packaged so the install is a conversation, not a project.
+It's the same system [Imperium](https://www.imperiumos.ai) runs its own company on - packaged so the install is a conversation, not a project.
 
 <p align="center">
   <picture>
@@ -108,8 +111,8 @@ v0.2 was hardened by running two full overnight install simulations against real
 
 First line of support is the chat itself: describe what happened in plain English and it will diagnose and fix most things on its own. The five-minute orientation lives at [docs/START-HERE.md](docs/START-HERE.md), the visual map at [docs/system-map.html](docs/system-map.html), and the engineering story at [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md). Release history: [CHANGELOG.md](CHANGELOG.md).
 
-Want it installed for you, wired into your real stack (CRM, accounting, call transcripts, WhatsApp, dashboards), and tuned in person? That's what [Imperium Growth](https://imperium-growth.com) does.
+Want it installed for you, wired into your real stack (CRM, accounting, call transcripts, WhatsApp, dashboards), and tuned in person? That's what [Imperium](https://www.imperiumos.ai) does.
 
 ---
 
-<p align="center"><b>Imperium OS</b> · built by <b>Imperium Growth</b> · clone it, say hello, own your operating system</p>
+<p align="center"><b>Imperium OS</b> · built by <b>Imperium</b> · clone it, say hello, own your operating system</p>
