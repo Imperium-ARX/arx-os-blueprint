@@ -18,7 +18,10 @@ Imperium OS turns Claude Code into a system that knows your business, remembers 
 It's the same system [Imperium Growth](https://imperium-growth.com) runs its own company on - packaged so the install is a conversation, not a project.
 
 <p align="center">
-  <img src="docs/assets/flow.svg" alt="Install flow: clone, say the line, interview, connect tools, first skills, compounding" width="100%"/>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="docs/assets/install-flow-dark.svg">
+    <img src="docs/assets/install-flow.svg" alt="Install flow: clone the repo, say the line, it interviews you, connect your tools, first skills live, it compounds" width="100%">
+  </picture>
 </p>
 
 ## Install (the whole thing)
@@ -43,7 +46,10 @@ Get interrupted? Come back any day and type **"continue onboarding"** or **"wher
 ## What onboarding looks like
 
 <p align="center">
-  <img src="docs/assets/phases.svg" alt="The eight onboarding phases" width="100%"/>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="docs/assets/onboarding-phases-dark.svg">
+    <img src="docs/assets/onboarding-phases.svg" alt="The eight onboarding phases, welcome to graduation" width="100%">
+  </picture>
 </p>
 
 Eight short phases, one question at a time, about an hour of your attention in total. Whether you're a founder, a CEO with three ventures, a creative director inside someone else's company, or an operator with a portfolio of projects - the interview adapts: it asks whose company this is, which business is home base, and whether your public words go out as you or as the brand.
@@ -53,7 +59,10 @@ A live progress page ([docs/setup-status.html](docs/setup-status.html) - open it
 ## What's inside
 
 <p align="center">
-  <img src="docs/assets/architecture.svg" alt="Architecture: you, the brain, and the six organs - context, memory, skills, connectors, self-maintenance" width="100%"/>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="docs/assets/os-architecture-dark.svg">
+    <img src="docs/assets/os-architecture.svg" alt="Architecture: you, the brain, and the five organs: context, memory, skills, connectors, self-maintenance" width="100%">
+  </picture>
 </p>
 
 - **21 engine skills.** Pre-built workflows every seat needs - memory, research, client delivery, strategy, quality control. Each one triggers automatically when you ask for something it covers. Department-specific workflows live in packs (below), so the base stays lean.
